@@ -14,22 +14,26 @@ console.log('Host: ' + host)
 console.log('Parts: ' + parts)
 console.log('Domain length: ' + domainLength)
 
-if (domainLength === 2) {
-  routesByDomain = [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-  ]
-} else if(domainLength === 3) {
-  routesByDomain = [
-    {
-      path: '/',
-      name: 'About',
-      component: About
-    }
-  ]
+switch (parts[0]) {
+  case 'dibal':
+    routesByDomain = [
+      {
+        path: '/',
+        name: 'Home',
+        component: Home
+      },
+    ]
+    break;
+
+  default:
+    routesByDomain = [
+      {
+        path: '/',
+        name: 'About',
+        component: About
+      }
+    ]
+    break;
 }
 
 const routes = [
