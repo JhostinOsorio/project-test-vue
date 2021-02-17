@@ -36,7 +36,8 @@ const routes = [
   ...routesByDomain
 ]
 
-console.log('Routes: ' + routes)
+console.log(routes)
+console.log('test')
 
 const router = new VueRouter({
   mode: 'history',
