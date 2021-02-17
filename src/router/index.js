@@ -10,6 +10,10 @@ const parts = host.split('.')
 const domainLength = parts.length
 let routesByDomain = []
 
+console.log('Host: ' + host)
+console.log('Parts: ' + parts)
+console.log('Domain length: ' + domainLength)
+
 if (domainLength === 2) {
   routesByDomain = [
     {
@@ -31,6 +35,8 @@ if (domainLength === 2) {
 const routes = [
   ...routesByDomain
 ]
+
+console.log('Routes: ' + routes)
 
 const router = new VueRouter({
   mode: 'history',
