@@ -6,6 +6,7 @@
       <a href="http://dist.test">Ir al dominio principal</a> | 
       <a href="http://dibal.dist.test">Ir al subdominio</a>
     </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis quas architecto nemo ad aperiam fugit necessitatibus odit iusto, vero qui cupiditate iure sint, quidem commodi porro nam, assumenda adipisci?</p>
     <router-view/>
   </div>
 </template>
