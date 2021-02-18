@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import FirstPage from '../views/FirstPage.vue'
 
 Vue.use(VueRouter)
 
@@ -31,6 +32,11 @@ switch (parts[0]) {
         path: '/',
         name: 'About',
         component: About
+      },
+      {
+        path: '/page-test',
+        name: 'page-test',
+        component: FirstPage,
       }
     ]
     break;
